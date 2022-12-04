@@ -1,0 +1,36 @@
+.repos {
+  border-bottom: 1px solid #30363d;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .repos__name {
+    display: flex;
+    gap: 10px;
+
+    h3 {
+      color: #58a6ff;
+      font-size: 20px;
+    }
+
+    span {
+      color: #8b949e;
+      border: 1px solid #30363d;
+      border-radius: 30px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5px;
+      font-weight: 500;
+      height: 20px;
+    }
+  }
+
+  .repos__language {
+    font-size: 12px;
+    color: #8b949e;
+    display: flex;
+    gap: 15px;
+  }
+}

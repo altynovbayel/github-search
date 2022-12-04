@@ -1,0 +1,50 @@
+.header{
+  padding: 0 5px;
+  background-color: #161B22;
+  .header__container{
+    width: 90%;
+    margin: 0 auto;
+    .header__row{
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      justify-content: space-between;
+      .header__logo{
+        svg{
+          width: 35px;
+          height: 35px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+      .header__input{
+        input{
+          width: 300px;
+          height: 25px;
+          padding: 0 5px;
+          background-color: #0D1117;
+          color: white;
+          @media (max-width: 425px) {
+            width: 200px;
+          }
+        }
+        .dropdown{
+          background-color: #0D1117;
+          max-height: 200px;
+          overflow: hidden;
+          color: white;
+          border: 1px solid #23262b;
+          position: absolute;
+          width: 210px;
+          overflow-y: scroll;
+          .user{
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+            
+          }
+        }
+      }
+    }
+  }
+}

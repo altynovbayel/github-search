@@ -1,0 +1,20 @@
+.main{
+  .main__row{
+    .main__repos{
+      .pagination{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: #f0f6fc;
+        margin-top: 20px;
+        button{
+          width: 50px;
+          height: 30px;
+          background-color: transparent;
+          color: #f0f6fc;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

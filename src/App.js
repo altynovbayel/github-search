@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Main from './pages/Main';
+import UserDetails from "./pages/UserDetails";
+import Header from "./components/Header";
+import React from "react";
+axios.defaults.baseURL = 'https://api.github.com'
 
 function App() {
+  const [singleUser, setSingleUser] = React.useState('')
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setUser={setSingleUser}/>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path={'/user'} element={<UserDetails login={singleUser}/>}/>
+      </Routes>
     </div>
   );
 }

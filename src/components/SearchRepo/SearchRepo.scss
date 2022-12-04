@@ -1,0 +1,44 @@
+.search__repo {
+  width: 90%;
+  margin: 20px auto;
+  padding: 0 5px;
+  .repo__input {
+    input {
+      width: 90%;
+      background-color: transparent;
+      color: #f0f6fc;
+      font-size: 14px;
+      padding: 5px 12px;
+      line-height: 20px;
+      border: 2px solid #30363d;
+      border-radius: 6px;
+      cursor: text;
+      outline: 1px blue;
+      -webkit-transition: 0.3s;
+    }
+    input[type=text]:focus {
+      border: 2px solid #58a6ff;
+    }
+  }
+  .repo__filter{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    button{
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 5px 18px;
+      background-color: #21262D;
+      color: #c9d1d9;
+      border-radius: 6px;
+      height: 32px;
+      border: 1px solid rgba(240,246,252,0.1);
+    }
+  }
+}
