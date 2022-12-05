@@ -10,6 +10,8 @@ function UserProfile(
     bio, 
     followers,
     following,
+    setFollowers,
+    setFollowing
   }) {
 return (
   <div className='profile'>
@@ -28,11 +30,11 @@ return (
       </div>
       <div className="profile__followers">
         <MdPeopleAlt/>
-        <p>
+        <p onClick={() => setFollowers(true)}>
           <span>{followers}</span> followers
         </p>
         ·
-        <p>
+        <p onClick={() => setFollowing(true)}>
           <span>{following}</span> following
         </p>
       </div>

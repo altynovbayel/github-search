@@ -6,4 +6,6 @@ export const api = {
   getRepos: (username) => axios.get(`/users/${username}/repos`),
   reposFilter: (username, type, lang, sort) => axios.get(`/users/${username}?q=sort=${sort}`),
   findUser: (username) => axios.get(`/search/users?q=${username}`),
+  getFollowers: (username) => axios.get(`/users/${username}/followers`),
+  getFollowing: (username) => axios.get(`/users/${username}/following`)
 }

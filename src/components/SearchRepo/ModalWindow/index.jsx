@@ -20,7 +20,7 @@ function ModalWindow({title, list, setState, setChange, change}) {
           list.map((item, id) => (
             <span key={id}>
               <li onClick={() => {
-                setChange(item.toLowerCase())
+                setChange(item)
                 setState(false)
               }}>
                 <span>

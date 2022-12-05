@@ -23,7 +23,10 @@ function Header({setUser}) {
       <div className="header__container">
         <div className="header__row">
           <div className="header__logo">
-            <BsGithub onClick={() => navigate('/')}/>
+            <BsGithub onClick={() => {
+              navigate('/')
+              setUsers('')
+            }}/>
           </div>
           <div className="header__input">
             <input type="text" placeholder='user search' onChange={e => setFindUser(e.target.value)}/>

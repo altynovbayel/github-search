@@ -2,7 +2,7 @@
 
 export const selectBtn = ['type', 'language', 'sort']
 
-const selectType = ['All', 'Sources', 'Forks', 'Archived', 'Mirrors', 'Templates']
+const selectType = ['All','Forks', 'Archived', 'Mirrors',]
 
 const selectSort = ['Last updated', 'Name', 'Stars']
 

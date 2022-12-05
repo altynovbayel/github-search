@@ -5,6 +5,7 @@ import Main from './pages/Main';
 import UserDetails from "./pages/UserDetails";
 import Header from "./components/Header";
 import React from "react";
+import Followers from "./components/Followers";
 axios.defaults.baseURL = 'https://api.github.com'
 
 function App() {
